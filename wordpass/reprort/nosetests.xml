@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="1" failures="0" skip="0"><testcase classname="test_suite.Became" name="test_became" time="28.263"><system-out><![CDATA[chenjie1399793705.13
+13
+chenjie1399793705.13
+chenjiejijihahah
+chenjie1399793705.13
+End test
+]]></system-out></testcase><testcase classname="test_suite.Serach" name="test_serach" time="5.396"><error type="selenium.common.exceptions.NoSuchWindowException" message="Message: u'no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=34.0.1847.131)\n  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64)' &#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session {&quot;sessionId&quot;: null, &quot;desiredCapabilities&quot;: {&quot;platform&quot;: &quot;ANY&quot;, &quot;browserName&quot;: &quot;chrome&quot;, &quot;version&quot;: &quot;&quot;, &quot;javascriptEnabled&quot;: true, &quot;chromeOptions&quot;: {&quot;args&quot;: [], &quot;extensions&quot;: []}}}&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session/0797d3ad1b88a3d34e8b6ea7b364a6b8/url {&quot;url&quot;: &quot;http://localhost/wordpress/wp-login.php&quot;, &quot;sessionId&quot;: &quot;0797d3ad1b88a3d34e8b6ea7b364a6b8&quot;}&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session/0797d3ad1b88a3d34e8b6ea7b364a6b8/element {&quot;using&quot;: &quot;id&quot;, &quot;sessionId&quot;: &quot;0797d3ad1b88a3d34e8b6ea7b364a6b8&quot;, &quot;value&quot;: &quot;user_login&quot;}&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 327, in run
+    testMethod()
+  File "D:\wordpass\case\Serach.py", line 23, in test_serach
+    lib.commernt.login(self.dr,self.username,self.password)
+  File "D:\wordpass\lib\commernt.py", line 12, in login
+    dr.find_element_by_id("user_login").send_keys(username)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 197, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 681, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 164, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 164, in check_response
+    raise exception_class(message, screen, stacktrace)
+'Message: u\'no such window: target window already closed\\nfrom unknown error: web view not found\\n  (Session info: chrome=34.0.1847.131)\\n  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64)\' \n-------------------- >> begin captured logging << --------------------\nselenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session {"sessionId": null, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "javascriptEnabled": true, "chromeOptions": {"args": [], "extensions": []}}}\nselenium.webdriver.remote.remote_connection: DEBUG: Finished Request\nselenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session/0797d3ad1b88a3d34e8b6ea7b364a6b8/url {"url": "http://localhost/wordpress/wp-login.php", "sessionId": "0797d3ad1b88a3d34e8b6ea7b364a6b8"}\nselenium.webdriver.remote.remote_connection: DEBUG: Finished Request\nselenium.webdriver.remote.remote_connection: DEBUG: POST http://127.0.0.1:59781/session/0797d3ad1b88a3d34e8b6ea7b364a6b8/element {"using": "id", "sessionId": "0797d3ad1b88a3d34e8b6ea7b364a6b8", "value": "user_login"}\nselenium.webdriver.remote.remote_connection: DEBUG: Finished Request\n--------------------- >> end captured logging << ---------------------']]></error></testcase></testsuite>

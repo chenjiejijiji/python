@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>	
+	<username>admin</username>
+	<password>chenjiejiji!!123</password>
+	<data>"chenjie%s"%(time.time())</data>
+	<text>chenjiejijihahah</text>
+	<tltle_element>.entry-title a</tltle_element>
+	<content_element>.entry-summary p</content_element>
+	<content_main_variables>zhoujiazhe</content_main_variables>
+</information>
